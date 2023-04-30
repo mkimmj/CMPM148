@@ -1,6 +1,6 @@
 
 function setup(){
-    grammar = tracery.createGrammar(spellbook);
+    grammar = tracery.createGrammar(premise_data);
     var trace = grammar.createTrace();
     console.log(trace);
 }
