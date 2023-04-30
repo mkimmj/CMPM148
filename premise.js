@@ -1,14 +1,9 @@
 
-function setup(){
-    grammar = tracery.createGrammar(premise_data);
-    var trace = grammar.createTrace();
-    console.log(trace);
-}
 
 
 
 
-premise_data = {
+var premise_data = {
 "origin":["[myPlace:#area##areafollowup#]#setPronouns##opener#"],
 
 "opener":["#myPlace# Police Report <br> Case Number: #n##n##n##n##n##n#                                      Date: [Ddate:#date#]#Ddate# <br><br> Incident: At #time# #ap# on #Ddate#, #witnessF# [lastname:#witnessL#]#lastname# reported a homicide #nearby# the local #myPlace# Park [myfeature:#feature#]#myfeature#.  The body was identified at the scene as the local tarot card reader affectionately referred to as, Lady at the Park <br><br> Detail of Event: <br> While out walking #heroTheir# dog #title# #lastname# wanted to stop by the #myfeature# for a short break. it was there #heroThey# noticed #mood# squabbling nearby. The sound was drawing a lot of attention and by the time #heroThey# got to the scene, Lady at the Park was already on the ground with only a pigeon over her dead body. "],
@@ -38,4 +33,12 @@ premise_data = {
 "area":["Baltimore", "New York", "Wisconsin", "Georgia", "Seoul", "Tasmania", "New South Wales", "Huashan", "San Toni"],
 
 "areafollowup":[" County", " City", " District"]
+}
+
+var grammar; 
+
+function setup(){
+    grammar = tracery.createGrammar(premise_data);
+    var trace = grammar.flatten("#origin#");
+    console.log(trace);
 }
