@@ -63,7 +63,7 @@ var personnel_data = {
 
 function run_personnel(){
     var pRes = grammars.GenerationSimple(personnel_data);
-    io.write_into_element(res, "temp")
+    io.write_into_element(pRes, "temp")
 }
 
 function run_premise(){
