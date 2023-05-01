@@ -1,8 +1,5 @@
 
 
-
-
-
 var premise_data = {
 "origin":["[myPlace:#area##areafollowup#]#setPronouns##opener#"],
 
@@ -35,10 +32,8 @@ var premise_data = {
 "areafollowup":[" County", " City", " District"]
 }
 
-var grammar; 
-
-function setup(){
-    grammar = tracery.createGrammar(premise_data);
-    var trace = grammar.flatten("#origin#");
-    console.log(trace);
+function run_premise(){
+    grammars.GenerationSimple(premise_data)
 }
+
+
