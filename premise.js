@@ -33,7 +33,7 @@ var premise_data = {
 }
 
 function run_premise(){
-    grammars.GenerationSimple(premise_data)
+    grammar.GenerationSimple(premise_data)
 }
 
 
