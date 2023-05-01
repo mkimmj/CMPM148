@@ -2,7 +2,7 @@
 
 var premise_data = {
     
-        "origin":["[myPlace:#area##areafollowup#][Ddate:#date#][myfeature:#feature#][lastname:#witnessL#]#setPronouns##opener#"],
+        "origin":["#[myPlace:#area##areafollowup#][Ddate:#date#][myfeature:#feature#][lastname:#witnessL#][#setPronouns#] opener#"],
         
         
         "opener":["#myPlace# Police Report <br> Case Number: #n##n##n##n##n##n#                                      Date: #Ddate# <br><br> Incident: At #time# #ap# on #Ddate#, #witnessF# #lastname# reported a homicide #nearby# the local #myPlace# Park #myfeature#.  The body was identified at the scene as the local tarot card reader affectionately referred to as, Lady at the Park <br><br> Detail of Event: <br> While out walking #heroTheir# dog, #title# #lastname# wanted to stop by the #myfeature# for a short break. it was there #heroThey# noticed #mood# squabbling nearby. The sound was drawing a lot of attention and by the time #heroThey# got to the scene, Lady at the Park was already on the ground with only a pigeon over her dead body. "],
