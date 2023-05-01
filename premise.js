@@ -36,7 +36,7 @@ var premise_data = {
 
 function run_premise(){
     var res = grammars.GenerationSimple(premise_data);
-    import.write_into_element(res, "temp");
+    io.write_into_element(res, "temp")
 }
 
 
