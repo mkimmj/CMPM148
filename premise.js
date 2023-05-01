@@ -34,6 +34,38 @@ var premise_data = {
         "areafollowup":[" County", " City", " District"]
 }
 
+var personnel_data = {
+    "origin":["#[myPlace:#path#][lastname:#lname#][role:#job#]line#"],
+    
+    
+    "line":["You are: <br> #name# #lastname#, a #descriptor# #n##n# years young #role# who is very #descriptor# and #emo# #noun#. You have #relation.a# from that one time you #incident#, #conclusion#. "],
+    
+    "job":["prosecutor", "lawyer"],
+    
+    "name":["James", "John", "Michael", "Jin", "Jennifer", "Manny", "David", "Esther", "Jenny", "George", "Kyle", "Kylie", "Hunter"],
+    
+    "lname":["Yeh", "Shin", "Ryan", "O'Brien", "O'Connell", "Jones", "Lee", "Wren"],
+    
+    "descriptor":["lonely", "haggard", "frail", "old", "grumpy", "hardboiled", "soft spoken", "intense", "sweet", "determined", "ghastly", "nasty", "wizened"],
+    
+    "n":["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    
+    "emo":["loves", "likes", "hates", "dislikes", "enjoys", "contempts", "despises"],
+    
+    "noun":["apples", "bulldogs", "tiny ships", "urinals", "orthodontists"],
+    
+    "relation":["strained relationship with the local police department", "harmonious relationship with the local police department", "awful reputation with the local police", "couple friends down at the police station", "informant down by the local park" ,"bounty from the cinder block mafia"],
+    
+    "incident":["saved a frog from drowning in a well", "saved the lieutenants' poodle", "slipped and fell over a wet floor sign", "won a pie eating contest"],
+    
+    "conclusion":["saving the day", "ruining their clothes", "destroying public property", "earning a medal of honor", "being late to your own party"]
+    }
+
+function run_personnel(){
+    var pRes = grammars.GenerationSimple(personnel_data);
+    io.write_into_element(res, "temp")
+}
+
 function run_premise(){
     var res = grammars.GenerationSimple(premise_data);
     io.write_into_element(res, "temp")
