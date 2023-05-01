@@ -35,7 +35,7 @@ var premise_data = {
 }
 
 function run_premise(){
-    (grammars.GenerationSimple(premise_data)).print();
+    (grammars.GenerationSimple(premise_data));
 }
 
 
